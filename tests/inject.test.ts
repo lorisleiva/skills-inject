@@ -95,7 +95,7 @@ describe("buildMarkerContent", () => {
   it("produces empty markers for no injections", () => {
     const result = buildMarkerContent([], defaults);
     expect(result).toBe(
-      "<!-- skills-inject:start -->\n<!-- skills-inject:end -->",
+      "<!-- skills-inject:start -->\n\n<!-- skills-inject:end -->",
     );
   });
 });
@@ -123,6 +123,7 @@ describe("injectIntoFile", () => {
 `# Agent Instructions
 
 <!-- skills-inject:start -->
+
 ## Skill Instructions
 
 ${DEFAULT_DESCRIPTION}
@@ -130,6 +131,7 @@ ${DEFAULT_DESCRIPTION}
 ### Test Skill
 
 - Test content.
+
 <!-- skills-inject:end -->
 `,
     );
@@ -150,6 +152,7 @@ ${DEFAULT_DESCRIPTION}
 Existing content.
 
 <!-- skills-inject:start -->
+
 ## Skill Instructions
 
 ${DEFAULT_DESCRIPTION}
@@ -157,6 +160,7 @@ ${DEFAULT_DESCRIPTION}
 ### Test Skill
 
 - Test content.
+
 <!-- skills-inject:end -->
 `,
     );
@@ -179,6 +183,7 @@ ${DEFAULT_DESCRIPTION}
 `# Header
 
 <!-- skills-inject:start -->
+
 ## Skill Instructions
 
 ${DEFAULT_DESCRIPTION}
@@ -186,6 +191,7 @@ ${DEFAULT_DESCRIPTION}
 ### Test Skill
 
 - Test content.
+
 <!-- skills-inject:end -->
 
 Footer.
@@ -249,6 +255,7 @@ Footer.
 Some existing content.
 
 <!-- skills-inject:start -->
+
 ## Skill Instructions
 
 ${DEFAULT_DESCRIPTION}
@@ -263,6 +270,7 @@ ${DEFAULT_DESCRIPTION}
 - Another beta rule.
 
 - Headless rule.
+
 <!-- skills-inject:end -->
 `,
     );
@@ -282,6 +290,7 @@ ${DEFAULT_DESCRIPTION}
 `# Project
 
 <!-- skills-inject:start -->
+
 ## Agent Guidelines
 
 Follow these rules.
@@ -289,6 +298,7 @@ Follow these rules.
 ### Test Skill
 
 - Test content.
+
 <!-- skills-inject:end -->
 `,
     );

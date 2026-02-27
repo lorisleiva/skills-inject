@@ -41,9 +41,9 @@ export function buildMarkerContent(
 ): string {
   const block = buildInjectionBlock(injections, config);
   if (!block) {
-    return `${MARKER_START}\n${MARKER_END}`;
+    return `${MARKER_START}\n\n${MARKER_END}`;
   }
-  return `${MARKER_START}\n${block}\n${MARKER_END}`;
+  return `${MARKER_START}\n\n${block}\n\n${MARKER_END}`;
 }
 
 /**
