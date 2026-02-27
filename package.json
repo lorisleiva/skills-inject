@@ -29,6 +29,10 @@
     "inject",
     "cli"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lorisleiva/skills-inject.git"
+  },
   "author": "Loris Leiva",
   "license": "MIT",
   "packageManager": "pnpm@10.6.4",
