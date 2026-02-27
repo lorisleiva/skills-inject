@@ -4,9 +4,9 @@ CLI tool that injects skill summaries from INJECT.md files into agent instructio
 
 ## Commands
 
-- `npm test` — run tests (vitest)
-- `npm run typecheck` — type-check (tsc --noEmit)
-- `npm run build` — bundle CLI (tsup -> dist/cli.js)
+- `pnpm test` — run tests (vitest)
+- `pnpm run typecheck` — type-check (tsc --noEmit)
+- `pnpm run build` — bundle CLI (tsup -> dist/cli.js)
 
 ## Architecture
 
@@ -21,4 +21,5 @@ Types: `src/types.ts` — all shared interfaces.
 - `gray-matter` for frontmatter parsing (CJS — requires `createRequire` shim in tsup banner).
 - Tests in `tests/`, using vitest. Inject output tests use exact string matching (`.toBe()` with template literals).
 - Priority is a named tier: `high`, `normal`, or `low` (not numeric).
-- Use `npx changeset add --empty` to generate changeset files. Never create them manually.
+- Always use pnpm, never npm or yarn.
+- Use `pnpm changeset add --empty` to generate changeset files. Never create them manually.
