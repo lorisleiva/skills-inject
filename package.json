@@ -1,6 +1,6 @@
 {
   "name": "skills-inject",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Inject skill summaries into your agent instruction files (CLAUDE.md, AGENTS.md)",
   "type": "module",
   "bin": {
@@ -41,6 +41,6 @@
     "picocolors": "^1.1.1",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0",
-    "vitest": "^3.0.0"
+    "vitest": "^4.0.18"
   }
 }
