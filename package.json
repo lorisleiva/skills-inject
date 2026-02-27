@@ -17,7 +17,7 @@
     "typecheck": "tsc --noEmit",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "pnpm run build && pnpm publish --access public --no-git-checks && pnpm changeset tag"
+    "release": "pnpm run build && pnpm changeset publish"
   },
   "keywords": [
     "skills",
