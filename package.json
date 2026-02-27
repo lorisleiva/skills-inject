@@ -1,6 +1,6 @@
 {
   "name": "skills-inject",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Inject skill summaries into your agent instruction files (CLAUDE.md, AGENTS.md)",
   "type": "module",
   "bin": {
