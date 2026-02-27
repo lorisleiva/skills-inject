@@ -1,5 +1,11 @@
 # skills-inject
 
+## 0.1.2
+
+### Patch Changes
+
+- [`d38aee9`](https://github.com/lorisleiva/skills-inject/commit/d38aee9decd71b75550e1e7136fd39dbb1e78eed) Thanks [@lorisleiva](https://github.com/lorisleiva)! - Add repository field and remove redundant .npmrc.
+
 ## 0.1.1
 
 ### Patch Changes
