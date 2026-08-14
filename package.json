@@ -37,7 +37,7 @@
   "license": "MIT",
   "packageManager": "pnpm@10.6.4",
   "devDependencies": {
-    "@changesets/changelog-github": "^0.7.0",
+    "@changesets/changelog-github": "^1.0.0",
     "@changesets/cli": "^2.29.8",
     "@clack/prompts": "^1.0.1",
     "@types/node": "^26.0.0",
